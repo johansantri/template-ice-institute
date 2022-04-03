@@ -79,22 +79,11 @@
       }
 
 
-      .fot-line {
-        font-size: 1.125rem;
-      
-      }
+     
 
   
 
-      @media only screen and (max-width: 600px) {
-        .fot-line {
-      
-          display: none;
-          
-        }
-
-
-      }
+    
 
       .img-fot {
         font-size: 1.125rem;
@@ -117,6 +106,19 @@
       padding-left: 60px;
       
       }
+
+      @media only screen and (max-width: 600px){
+      .garis {
+        border-left: 0px solid red;
+        border-left-color: red;
+        border-left-style: solid;
+        border-left-width: 0px;
+      text-align: left;
+      padding-left: 0px;
+        
+      }
+      }
+
     </style>
     
 
@@ -624,10 +626,10 @@
               <a href="www.icei.ac.id" style="color: red; text-decoration: none;">Job</a> </p>
       </div>
       
-      <div class="col-sm-4 fot-line">
+      <div class="col-sm-4 ">
 
         
-        <div class="garis">
+        <div class="garis fot-line">
           <h5 class="text-fot" style="color: red;  font-weight: bold;">Alamat</h5>
         <p class="text-fot" style="font-size:small;" > ICE Institute<br>
           Universitas Terbuka<br>
@@ -640,7 +642,7 @@
           <i class="fa fa-globe"></i> <span style="color: red;"> www.icei.ac.id </span> </p>
 
 
-          <div class="sc_icons_container" style="display:flex;justify-content: flex-start;">
+          <div class="sc_icons_container text-fot" style="display:ruby;/*! justify-content: flex-start; */max-width: 35px;">
             <div>
             <a href="https://www.facebook.com/ice.institut">
             <img style="max-width:35px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png">
