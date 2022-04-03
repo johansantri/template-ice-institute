@@ -42,42 +42,18 @@
         }
       }
   
+    
       .text-fot {
         font-size: 1.125rem;
       
       }
-
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .text-fot {
-         
-          text-align: left;
-        }
+      @media only screen and (max-width: 600px){
+      .text-fot {
+        display:block;
+        margin:0 auto;
+        text-align: center;
       }
-
-      @media (min-width: 1200px) {
-        .text-fot {
-        
-          text-align: left;
-        }
       }
-
-      @media (min-width: 600px) {
-        .text-fot {
-          
-          text-align: left;
-        }
-      }
-
-      @media only screen and (max-width: 600px) {
-        .text-fot {
-      
-          text-align: center;
-          
-        }
-
-
-      }
-
 
      
 
@@ -93,7 +69,7 @@
       .img-fot {
         display:block;
         margin:0 auto;
-        
+       
       }
       }
 
@@ -102,8 +78,8 @@
         border-left-color: red;
         border-left-style: solid;
         border-left-width: 2px;
-      text-align: left;
-      padding-left: 60px;
+        text-align: left;
+        padding-left: 35px;
       
       }
 
@@ -113,12 +89,32 @@
         border-left-color: red;
         border-left-style: solid;
         border-left-width: 0px;
-      text-align: left;
-      padding-left: 0px;
+       
+      
+       
         
       }
       }
 
+      
+      .sosial {    
+            
+        
+        text-align: left;
+       
+      
+      }
+
+      @media only screen and (max-width: 600px){
+      .sosial {
+       
+        justify-content: center!important;
+       
+      
+       
+        
+      }
+      }
     </style>
     
 
@@ -126,50 +122,47 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
+  <header >
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom border-danger "> 
+      <div class="container-fluid">
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <a class="navbar-brand" href="https://icei.ac.id/"> <img src="https://icei.ac.id/static/comprehensive/images/logo.3a535928f907.png" style="float: left; height: 40px; vertical-align: middle; border-style: none;"></img></a>
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#" style=" font-weight: bold; color: black; font-size: 15px;"></a> 
+            </li>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://icei.ac.id/courses" style=" font-weight: bold; color: black; font-size: 18px;">Matakuliah</a> 
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://icei.ac.id/#partners" style=" font-weight: bold; color: black; font-size: 18px;">Universitas/Institusi/Lembaga</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://verify.accredible.com/input" style=" font-weight: bold; color: black; font-size: 18px;">Sertifikat</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://verify.accredible.com/input" style=" font-weight: bold; color: black; font-size: 18px;">Berita/Info</a> 
+            </li>
+          </ul>
+          <form class="d-flex">
+           
+            <button class="btn btn-outline-danger btn-sm border-dark" type="submit">Daftar</button> &nbsp; &nbsp;
+            <button class="btn btn-outline-secondary  btn-sm border-dark  " type="submit">Masuk</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
   <body>
     
-<header >
-  <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom border-danger "> 
-    <div class="container-fluid">
-      &nbsp; &nbsp; &nbsp; &nbsp;
-      <a class="navbar-brand" href="https://icei.ac.id/"> <img src="https://icei.ac.id/static/comprehensive/images/logo.3a535928f907.png" style="float: left; height: 40px; vertical-align: middle; border-style: none;"></img></a>
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#" style=" font-weight: bold; color: black; font-size: 15px;"></a> 
-          </li>
-          &nbsp; &nbsp; &nbsp; &nbsp;
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="https://icei.ac.id/courses" style=" font-weight: bold; color: black; font-size: 16px;">Matakuliah</a> 
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="https://icei.ac.id/#partners" style=" font-weight: bold; color: black; font-size: 16px;">Universitas/Institusi/Lembaga</a> 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="https://verify.accredible.com/input" style=" font-weight: bold; color: black; font-size: 16px;">Sertifikat</a> 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="https://verify.accredible.com/input" style=" font-weight: bold; color: black; font-size: 16px;">Berita/Info</a> 
-          </li>
-        </ul>
-        <form class="d-flex">
-         
-          <button class="btn btn-outline-danger btn-sm border-dark" type="submit">Daftar</button> &nbsp; &nbsp;
-          <button class="btn btn-outline-secondary  btn-sm border-dark  " type="submit">Masuk</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <!-- Carousel -->
+      <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
   <!-- Indicators/dots -->
@@ -212,6 +205,10 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
+
+
+<main>
 
 
 
@@ -623,14 +620,15 @@
               <a href="https://verify.accredible.com/input" style="color: red; text-decoration: none;">FAQ</a> - 
               <a href="https://icei.ac.id/faq" style="color: red; text-decoration: none;">Hubungi Kami</a> - 
               <a href="www.icei.ac.id" style="color: red; text-decoration: none;">Bantuan</a> - 
-              <a href="www.icei.ac.id" style="color: red; text-decoration: none;">Job</a> </p>
+              <a href="www.icei.ac.id" style="color: red; text-decoration: none;">Job</a> </p><br>
       </div>
       
       <div class="col-sm-4 ">
-
+       
         
-        <div class="garis fot-line">
-          <h5 class="text-fot" style="color: red;  font-weight: bold;">Alamat</h5>
+        <div class="garis text-fot ">
+          <br>
+        <h5 class="text-fot" style="color: red;  font-weight: bold;">Alamat</h5>
         <p class="text-fot" style="font-size:small;" > ICE Institute<br>
           Universitas Terbuka<br>
           Gedung Serba Guna 1st Floor<br>
@@ -642,7 +640,7 @@
           <i class="fa fa-globe"></i> <span style="color: red;"> www.icei.ac.id </span> </p>
 
 
-          <div class="sc_icons_container text-fot" style="display:ruby;/*! justify-content: flex-start; */max-width: 35px;">
+          <div class="sosial text-fot" style="display:flex;justify-content: flex-start;">
             <div>
             <a href="https://www.facebook.com/ice.institut">
             <img style="max-width:35px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png">
