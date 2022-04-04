@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+ 
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="manifest.json">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+  
+    
+      .text-fot {
+        font-size: 1.125rem;
+      
+      }
+      @media only screen and (max-width: 600px){
+      .text-fot {
+        display:block;
+        margin:0 auto;
+        text-align: center;
+      }
+      }
+
+     
+
+  
+
+    
+
+      .img-fot {
+        font-size: 1.125rem;
+      
+      }
+      @media only screen and (max-width: 600px){
+      .img-fot {
+        display:block;
+        margin:0 auto;
+       
+      }
+      }
+
+      .garis {
+        border-left: 2px solid red;
+        border-left-color: red;
+        border-left-style: solid;
+        border-left-width: 2px;
+        text-align: left;
+        padding-left: 35px;
+      
+      }
+
+      @media only screen and (max-width: 600px){
+      .garis {
+        border-left: 0px solid red;
+        border-left-color: red;
+        border-left-style: solid;
+        border-left-width: 0px;
+       
+      
+       
+        
+      }
+      }
+
+      
+      .sosial {    
+            
+        
+        text-align: left;
+       
+      
+      }
+
+      @media only screen and (max-width: 600px){
+      .sosial {
+       
+        justify-content: center!important;
+       
+      
+       
+        
+      }
+      }
+    </style>
+    
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <header >
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom border-danger "> 
+      <div class="container-fluid">
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <a class="navbar-brand" href="https://icei.ac.id/"> <img src="https://icei.ac.id/static/comprehensive/images/logo.3a535928f907.png" style="float: left; height: 40px; vertical-align: middle; border-style: none;"></img></a>
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#" style=" font-weight: bold; color: black; font-size: 15px;"></a> 
+            </li>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://icei.ac.id/courses" style=" font-weight: bold; color: black; font-size: 17px;">Matakuliah</a> 
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://icei.ac.id/#partners" style=" font-weight: bold; color: black; font-size: 17px;">Universitas/Institusi/Lembaga</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://verify.accredible.com/input" style=" font-weight: bold; color: black; font-size: 17px;">Sertifikat</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="https://verify.accredible.com/input" style=" font-weight: bold; color: black; font-size: 17px;">Berita/Info</a> 
+            </li>
+          </ul>
+          <form class="d-flex">
+           
+            
+            <a href="https://icei.ac.id/register?next=%2F" class="btn btn-outline-danger btn border-danger"><span style="color: black; font-weight: bold;">Daftar</span></a>&nbsp; &nbsp;
+            <a href="https://icei.ac.id/login?next=%2F" class="btn btn-outline-secondary  btn border-dark">Masuk</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    
+   
+
+
+
+<main>
+
+
+
+
+
+   <!-- Page content-->
+   <div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Welcome to Blog Post!</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on January 1, 2022 by Start Bootstrap</div>
+                    <!-- Post categories-->
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
+                    <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                    <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                    <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
+                    <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
+                    <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                </section>
+            </article>
+            <!-- Comments section-->
+            <section class="mb-5">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <!-- Comment form-->
+                        <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
+                        <!-- Comment with nested comments-->
+                        <div class="d-flex mb-4">
+                            <!-- Parent comment-->
+                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                            <div class="ms-3">
+                                <div class="fw-bold">Commenter Name</div>
+                                If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
+                                <!-- Child comment 1-->
+                                <div class="d-flex mt-4">
+                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                    <div class="ms-3">
+                                        <div class="fw-bold">Commenter Name</div>
+                                        And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
+                                    </div>
+                                </div>
+                                <!-- Child comment 2-->
+                                <div class="d-flex mt-4">
+                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                    <div class="ms-3">
+                                        <div class="fw-bold">Commenter Name</div>
+                                        When you put money directly to a problem, it makes a good headline.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single comment-->
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                            <div class="ms-3">
+                                <div class="fw-bold">Commenter Name</div>
+                                When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Web Design</a></li>
+                                <li><a href="#!">HTML</a></li>
+                                <li><a href="#!">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Side Widget</div>
+                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+
+  <!-- FOOTER -->
+
+
+  <div class="container">
+    <footer >
+    
+    
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <div class="row">
+          <div class="col-sm-8 ">
+            
+            
+            <a href="#" ><img class="img-fot"  src="https://icei.ac.id/static/comprehensive/images/logo.3a535928f907.png" style=" height: 40px;  border-style: none; "></a><br> <br>
+        
+            <p class="text-fot" style="font-size:small;">ICE Institute adalah tempat dimana kamu dapat belajar dimanapun dan kapanpun di kampus yang kamu sukai! Sekarang kamu dapat belajar dari semua universitas-universitas terbaik di Indonesia</p>
+            <p class="text-fot" style="font-size:small; font-weight: bold; color: red;"> 
+              <a href="www.icei.ac.id" style="color: red; text-decoration: none;">Beranda</a>  -  
+              <a href="https://icei.ac.id/tracks/about/" style="color: red; text-decoration: none;">Tentang ICE Institute</a> - 
+              <a href="https://icei.ac.id/courses" style="color: red; text-decoration: none;">Matakuliah</a> - 
+              <a href="https://icei.ac.id/#partners" style="color: red; text-decoration: none;">Universitas</a> - 
+              <a href="https://verify.accredible.com/input" style="color: red; text-decoration: none;">FAQ</a> - 
+              <a href="https://icei.ac.id/faq" style="color: red; text-decoration: none;">Hubungi Kami</a> - 
+              <a href="www.icei.ac.id" style="color: red; text-decoration: none;">Bantuan</a> </p>
+      </div>
+      
+      <div class="col-sm-4 ">
+       
+        
+        <div class="garis text-fot ">
+          <br>
+        <h5 class="text-fot" style="color: red;  font-weight: bold;">Alamat</h5>
+        <p class="text-fot" style="font-size:small;" > ICE Institute<br>
+          Universitas Terbuka<br>
+          Gedung Serba Guna 1st Floor<br>
+          Jl. Cabe Raya Pondok Cabe, Pamulang,<br>
+          Tangerang Selatan - 15437<br>
+                  
+          <i class="fa fa-phone" aria-hidden="true"> </i> 0812 5050 4200 <br>
+         <i class="fa fa-envelope"></i><span style="color: red;"> sekretariat@icei.ac.id</span>  <br>
+          <i class="fa fa-globe"></i> <span style="color: red;"> www.icei.ac.id </span> </p>
+
+
+          <div class="sosial text-fot" style="display:flex;justify-content: flex-start;">
+            <div>
+            <a href="https://www.facebook.com/ice.institut">
+            <img style="max-width:35px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png">
+            <a>
+            </div>
+            &nbsp;
+            <div>
+            <a href="https://twitter.com/ice_institute_">
+            <img style="max-width:35px;" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-128.png">
+            <a>
+            </div>
+            &nbsp;
+            <div>
+            <a href="https://www.instagram.com/ice.institute/">
+            <img style="max-width:35px;" src="https://cdn0.iconfinder.com/data/icons/social-media-circle-6/1024/instagram-128.png">
+            <a>
+            </div>
+            &nbsp;
+            <div>
+            <a href="https://www.youtube.com/channel/UC2tFtypIqAUXk3FK6V4a5cg">
+            <img style="max-width:35px;" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/youtube3-128.png">
+            <a>
+            </div>
+            &nbsp;
+            <div>
+            <a href="https://www.linkedin.com/in/ice-institute-9372b1218">
+            <img style="max-width:35px;" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-128.png">
+            <a>
+            </div>
+            &nbsp;
+            <div>
+            <a href="https://api.whatsapp.com/send/?phone=6281250504200&text&app_absent=0">
+            <img style="max-width:35px;" src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Whatsapp-128.png">
+            <a>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+     
+    </div>
+    
+      </div>
+   
+      
+      <div class="col-sm-12">
+     
+        &nbsp; &nbsp; &nbsp;
+        <p style=" margin:auto;max-width:1140px;text-align: center;font-weight:400;color:red;font-size:12px;" >&copy; 2021 ICE Institute. All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+</main>
+
+
+
+
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Revolution JavaScripts Files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  </body>
+</html>
